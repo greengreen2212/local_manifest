@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/beryllium" name="crdroidandroid/android_device_xiaomi_beryllium.git" remote="github" revision="12.0" />
+ <project path="device/berylliumcommon" name="crdroidandroid/android_device_xiaomi_sdm845-common.git" remote="github" revision="12.0" />
+ <project path="vendor/beryllium" name="crdroidandroid/proprietary_vendor_xiaomi-beryllium.git" remote="github" revision="12.0" />
+ <project path="kernel/beryllium" name="crdroidandroid/android_kernel_xiaomi_sdm845.git" remote="github" revision="12.0" />
+ 
+</manifest>
