@@ -31,8 +31,8 @@
           revision="12.0" />
  <!-- Kernel Tree -->
  <project path="kernel/xiaomi/sdm845" 
-          name="android_kernel_xiaomi_sdm845.git" 
-          remote="crdroidandroid" 
+          name="android_kernel_xiaomi_sdm845-2.git" 
+          remote="walternewtz" 
           revision="12.0" />
 
 
