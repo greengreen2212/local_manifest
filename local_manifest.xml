@@ -24,6 +24,11 @@
           name="proprietary_vendor_xiaomi-beryllium.git" 
           remote="crdroidandroid" 
           revision="12.0" />
+<!-- hardware Tree -->
+ <project path="hardware/xiaomi" 
+          name="android_hardware_xiaomi" 
+          remote="crdroidandroid" 
+          revision="12.0" />
  <!-- Kernel Tree -->
  <project path="kernel/xiaomi/sdm845" 
           name="android_kernel_xiaomi_sdm845.git" 
