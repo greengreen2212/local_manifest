@@ -2,38 +2,52 @@
 <manifest>
 
   <!-- Remotes -->
- <remote name="crdroidandroid" 
-         fetch="https://github.com/crdroidandroid" />
+ <remote name="awaken" 
+         fetch="https://github.com/Project-Awaken" />
  <remote name="walternewtz" 
          fetch="https://github.com/walternewtz" />
+ <remote name="painkiller" 
+         fetch="https://github.com/PainKiller3" />
+ <remote name="lineage" 
+         fetch="https://github.com/LineageOS" />
+ <remote name="clang" 
+         fetch="https://gitlab.com/varunhardgamer" />
+ 
+
  
  <!-- Trees -->
   
  <!-- Device Tree -->
  <project path="device/xiaomi/beryllium" 
-          name="android_device_xiaomi_beryllium.git" 
+          name="device_xiaomi_beryllium.git" 
           remote="walternewtz" 
-          revision="12.0" />
+          revision="12" />
  <!-- Common Tree -->
  <project path="device/xiaomi/sdm845-common" 
-          name="android_device_xiaomi_sdm845-common.git" 
+          name="device_xiaomi_sdm845-common.git" 
           remote="walternewtz" 
-          revision="12.0" />
+          revision="12" />
  <!-- Vendor Tree -->
  <project path="vendor/xiaomi" 
-          name="proprietary_vendor_xiaomi-beryllium.git" 
-          remote="crdroidandroid" 
-          revision="12.0" />
+          name="vendor_xiaomi.git" 
+          remote="painkiller" 
+          revision="twelve" />
 <!-- hardware Tree -->
  <project path="hardware/xiaomi" 
-          name="android_hardware_xiaomi" 
-          remote="crdroidandroid" 
-          revision="12.0" />
+          name="android_hardware_xiaomi.git" 
+          remote="lineage" 
+          revision="lineage-19.0" />
  <!-- Kernel Tree -->
  <project path="kernel/xiaomi/sdm845" 
-          name="android_kernel_xiaomi_sdm845-2.git" 
-          remote="walternewtz" 
-          revision="12.0" />
+          name="kernel_xiaomi_sdm845.git" 
+          remote="painkiller" 
+          revision="twelve" />
+ <!-- Clang -->
+ <project path="prebuilts/clang/host/linux-x86/clang-custom" 
+          name="trb_clang.git" 
+          remote="clang" 
+          revision="15" />
+
 
 
 
