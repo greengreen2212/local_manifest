@@ -6,7 +6,26 @@
          fetch="https://github.com/crdroidandroid" />
  <remote name="walternewtz" 
          fetch="https://github.com/walternewtz" />
- 
+ <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="twelve"
+          review="gerrit.pixelexperience.org" />
+ <remote name="pixel-gitlab-self-hosted"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="twelve" />
+ <remote name="crdroid"
+          fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/12.0" />
+ <remote  name="crdroid-gitlab"
+           fetch="https://gitlab.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/12.0" />
+
+
+
  <!-- Trees -->
   
  <!-- Device Tree -->
@@ -30,25 +49,14 @@
           remote="crdroidandroid" 
           revision="12.0" />
  <!-- Package -->
- <remove-project path="packages/apps/FaceUnlockService" 
-                 name="android_packages_apps_FaceUnlockService.git" 
-                 remote="crdroidandroid" 
-                 revision="12.0" />
- <!-- Package -->
- <project path="packages/apps/FaceUnlockService" 
-          name="android_packages_apps_FaceUnlockService.git" 
-          remote="walternewtz" 
-          revision="12.0" />
-<!-- Package -->
- <remove-project path="packages/apps/Settings" 
-                 name="android_packages_apps_Settings.git" 
-                 remote="crdroidandroid" 
-                 revision="12.0" />
-<!-- Package -->
- <project path="packages/apps/Settings" 
-          name="android_packages_apps_Settings.git" 
-          remote="walternewtz" 
-          revision="12.0" />
+ <remove-project name="crdroidandroid/android_external_faceunlock" remote="crdroid-gitlab" />
+ <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
+ <remove-project name="crdroidandroid/android_packages_apps_FaceUnlockService" remote="crdroid" />
+ <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
+ <remove-project name="crdroidandroid/android_packages_apps_Settings" remote="crdroid" />
+ <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="walternewtz" />
+
+
  <!-- Kernel Tree -->
  <project path="kernel/xiaomi/sdm845" 
           name="android_kernel_xiaomi_sdm845.git" 
