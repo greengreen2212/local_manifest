@@ -23,10 +23,7 @@
            sync-c="true"
            sync-j="4"
            revision="refs/heads/12.0" />
-<remote  name="walternewt" 
-         fetch="https://github.com/" 
-         revision="12.0" />
-        
+
 
 
  <!-- Trees -->
@@ -52,12 +49,12 @@
           remote="crdroidandroid" 
           revision="12.0" />
  <!-- Package -->
- <remove-project name="crdroidandroid/android_external_faceunlock" />
+ <remove-project name="crdroidandroid/android_external_faceunlock" remote="crdroid-gitlab" />
  <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
- <remove-project name="crdroidandroid/android_packages_apps_FaceUnlockService" />
+ <remove-project name="crdroidandroid/android_packages_apps_FaceUnlockService" remote="crdroid" />
  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
- <remove-project name="crdroidandroid/android_packages_apps_Settings" />
- <project path="packages/apps/Settings" name="walternewtz/android_packages_apps_Settings.git" remote="walternewt" />
+ <remove-project name="crdroidandroid/android_packages_apps_Settings" remote="crdroid" />
+ <project path="packages/apps/Settings" name="walternewtz/android_packages_apps_Settings.git" remote="crdroid" />
 
 
  <!-- Kernel Tree -->
