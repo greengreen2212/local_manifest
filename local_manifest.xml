@@ -49,11 +49,11 @@
           remote="crdroidandroid" 
           revision="12.0" />
  <!-- Package -->
- <remove-project name="crdroidandroid/android_external_faceunlock" remote="crdroid-gitlab" />
+ <remove-project name="crdroidandroid/android_external_faceunlock" />
  <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
- <remove-project name="crdroidandroid/android_packages_apps_FaceUnlockService" remote="crdroid" />
+ <remove-project name="crdroidandroid/android_packages_apps_FaceUnlockService" />
  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
- <remove-project name="crdroidandroid/android_packages_apps_Settings" remote="crdroid" />
+ <remove-project name="crdroidandroid/android_packages_apps_Settings" />
  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="walternewtz" />
 
 
