@@ -23,9 +23,8 @@
            sync-c="true"
            sync-j="4"
            revision="refs/heads/12.0" />
-
-
-
+<remote name="kdrag0n" 
+         fetch="https://github.com/kdrag0n" />
 
  <!-- Trees -->
   
@@ -54,6 +53,12 @@
           name="android_kernel_xiaomi_sdm845.git" 
           remote="walternewtz" 
           revision="lineage-18.1" />
+ <!-- Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/clang-proton"
+          name="proton-clang" 
+          remote="kdrag0n"
+          revision="master" 
+          clone-depth="1" />
  <!-- Package -->
  <remove-project name="crdroidandroid/android_external_faceunlock" remote="crdroid-gitlab" />
  <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
