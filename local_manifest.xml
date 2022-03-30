@@ -40,6 +40,8 @@
 
 <remove-project name="android_device_lineage_sepolicy" remote="line" />
 <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="walternewtz" />
+<remove-project name="android_frameworks_base" remote="line" />
+<project path="frameworks/base" name="android_frameworks_base" remote="green" />
 
 
 </manifest>
