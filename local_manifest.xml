@@ -38,6 +38,8 @@
           remote="walternewtz" 
           revision="lineage-19.0" />
 
+<remove-project name="android_device_lineage_sepolicy" remote="line" />
+<project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="walternewtz" />
 
 
 </manifest>
