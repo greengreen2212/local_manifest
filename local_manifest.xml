@@ -54,6 +54,9 @@
           remote="walternewtz" 
           revision="lineage-19.0" />
 
+<project path="vendor/addons" name="android_vendor_addons" remote="walternewtz" revision="12.1" />
+
+
 <remove-project name="LineageOS/android_device_lineage_sepolicy" />
 <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="walternewtz" revision="lineage-18.1" />
 <remove-project name="LineageOS/android_frameworks_base" />
