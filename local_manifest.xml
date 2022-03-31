@@ -56,7 +56,7 @@
 
 <remove-project name="LineageOS/android_device_lineage_sepolicy" />
 <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="walternewtz" />
-<remove-project name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs"  />
+<remove-project name="LineageOS/android_frameworks_base" />
 <project path="frameworks/base" name="android_frameworks_base" remote="green" />
 
 
