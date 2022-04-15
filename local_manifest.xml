@@ -8,6 +8,11 @@
          fetch="https://github.com/walternewtz" />
   <remote name="line" 
          fetch="https://github.com/LineageOS/" />
+  <remote  name="crdroid"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/12.1" />
 
 
  
@@ -38,6 +43,9 @@
           name="android_kernel_xiaomi_sdm845.git" 
           remote="walternewtz" 
           revision="lineage-18.1" />
+
+<remove-project name="LineageOS/android_packages_apps_Dialer" />
+<project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" remote="crdroid" />
 
 
 
