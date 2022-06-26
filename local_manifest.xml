@@ -8,11 +8,7 @@
          fetch="https://github.com/walternewtz" />
   <remote name="line" 
          fetch="https://github.com/LineageOS/" />
-  <remote  name="crdroid"
-           fetch="https://github.com/"
-           sync-c="true"
-           sync-j="4"
-           revision="refs/heads/12.1" />
+  
 
 
  
@@ -21,18 +17,18 @@
  <!-- Device Tree -->
  <project path="device/xiaomi/beryllium" 
           name="android_device_xiaomi_beryllium.git" 
-          remote="green" 
+          remote="line" 
           revision="lineage-19.1" />
  <!-- Common Tree -->
  <project path="device/xiaomi/sdm845-common" 
           name="android_device_xiaomi_sdm845-common.git" 
-          remote="green" 
+          remote="line" 
           revision="lineage-19.1" />
  <!-- Vendor Tree -->
  <project path="vendor/xiaomi" 
           name="vendor_xiaomi.git" 
-          remote="walternewtz" 
-          revision="eleven" />
+          remote="green" 
+          revision="twelve" />
 <!-- hardware Tree -->
  <project path="hardware/xiaomi" 
           name="android_hardware_xiaomi.git" 
@@ -42,11 +38,7 @@
  <project path="kernel/xiaomi/sdm845" 
           name="android_kernel_xiaomi_sdm845.git" 
           remote="walternewtz" 
-          revision="lineage-18.1" />
-
-<remove-project name="LineageOS/android_packages_apps_Dialer" />
-<project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" remote="crdroid" />
-
+          revision="lineage-19.1" />
 
 
 </manifest>
