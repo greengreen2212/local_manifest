@@ -9,8 +9,8 @@
   <remote name="line" 
          fetch="https://github.com/LineageOS/" />
   <remote name="ven" 
-         fetch="https://gitlab.com/the-muppets" 
-         revision="lineage-19.1" />
+         fetch="https://gitlab.com/the-muppets" />
+         
   
 
 
@@ -28,12 +28,10 @@
           remote="line" 
           revision="lineage-19.1" />
  <!-- Vendor Tree -->
- <project path="vendor/xiaomi/beryllium" 
-          name="proprietary_vendor_xiaomi/-/tree/lineage-19.1/beryllium.git" 
+ <project path="vendor/xiaomi" 
+          name="proprietary_vendor_xiaomi.git" 
           remote="ven" 
-   <project path="vendor/xiaomi/sdm845-common" 
-          name="proprietary_vendor_xiaomi/-/tree/lineage-19.1/sdm845-common" 
-          remote="ven" 
+          revision="lineage-19.1" />
      
 <!-- hardware Tree -->
  <project path="hardware/xiaomi" 
