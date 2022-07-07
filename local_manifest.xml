@@ -41,7 +41,7 @@
  <!-- Kernel Tree -->
  <project path="kernel/xiaomi/sdm845" 
           name="android_kernel_xiaomi_sdm845.git" 
-          remote="walternewtz" 
+          remote="line" 
           revision="lineage-19.1" />
 
 
